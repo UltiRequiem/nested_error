@@ -1,9 +1,7 @@
-interface ErrorLike extends Error {}
-
 export class NestedError extends Error {
-  private readonly nested: ErrorLike;
+  private readonly nested: Error;
 
-  constructor(config: { message?: string; nested: ErrorLike }) {
+  constructor(config: { message?: string; nested: Error }) {
     const { message = "", nested } = config;
 
     super(message);
@@ -21,7 +19,7 @@ export class NestedError extends Error {
     Object.defineProperty(this, "stack", stackDescriptor);
   }
 
-  static buildCombinedStacks(stack: string, nested: ErrorLike) {
+  static buildCombinedStacks(stack: string, nested: Error) {
     if (nested) {
       stack += "\nCaused By: " + nested.stack;
     }
@@ -29,10 +27,7 @@ export class NestedError extends Error {
     return stack;
   }
 
-  buildStackDescriptor(
-    oldStackDescriptor: PropertyDescriptor,
-    nested: ErrorLike
-  ) {
+  buildStackDescriptor(oldStackDescriptor: PropertyDescriptor, nested: Error) {
     if (oldStackDescriptor.get) {
       const nested = this.nested;
 
