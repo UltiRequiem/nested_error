@@ -4,7 +4,7 @@
 [![Code Coverage](https://codecov.io/gh/ultirequiem/nested_error/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/nested_error)
 [![Deno Doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/nested_error/mod.ts)
 
-Get a random item from an array.
+Error objects with nested Errors in stacktraces.
 
 ## Usage
 
