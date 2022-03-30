@@ -15,6 +15,7 @@ jobs:
           mkdir output
           cp readme.md output/
           echo theme: jekyll-theme-cayman >> output/_config.yml
+          echo nested-error.js.org >> output/CNAME
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
