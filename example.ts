@@ -11,10 +11,6 @@ function sum(a: number, b: number) {
 try {
   sum(1, 4);
 } catch (error) {
-  const newError = new NestedError({
-    message: "Error while summing 1 and 4",
-    nested: error,
-  });
-
+  const newError = new NestedError("Error while summing 1 and 4", error);
   console.log(newError.stack);
 }

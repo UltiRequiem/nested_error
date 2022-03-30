@@ -1,19 +1,26 @@
 export class NestedError extends Error {
   private readonly nested: Error;
 
-  constructor(config: { message?: string; nested: Error }) {
-    const { message = "", nested } = config;
+  constructor(message: string | Error, nested?: Error) {
+    let messageParsed: string;
 
-    super(message);
+    if (message instanceof Error) {
+      messageParsed = message.message;
+      nested = message;
+    } else {
+      messageParsed = message;
+    }
 
-    this.nested = nested;
+    super(messageParsed);
+
+    this.nested = nested!;
 
     Error.captureStackTrace(this, this.constructor);
 
     const oldStackDescriptor = Object.getOwnPropertyDescriptor(this, "stack");
     const stackDescriptor = this.buildStackDescriptor(
       oldStackDescriptor!,
-      nested,
+      nested!
     );
 
     Object.defineProperty(this, "stack", stackDescriptor);
