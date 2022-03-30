@@ -6,4 +6,7 @@ import {
 
 import { NestedError } from "./mod.js";
 
-const newError = new NestedError("foo", new NestedError("bar", new Error("baz")));
+const newError = new NestedError(
+  "foo",
+  new NestedError("bar", new Error("baz")),
+);
