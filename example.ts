@@ -1,4 +1,4 @@
-import { NestedError } from "./mod.js";
+import { NestedError } from "./mod.ts";
 
 function sum(a: number, b: number) {
   if (a === 4 || b === 4) {
@@ -11,6 +11,10 @@ function sum(a: number, b: number) {
 try {
   sum(1, 4);
 } catch (error) {
-  const newError = new NestedError("Error while summing 1 and 4", error);
+  const newError = new NestedError({
+    message: "Error while summing 1 and 4",
+    nested: error,
+  });
+
   console.log(newError.stack);
 }
