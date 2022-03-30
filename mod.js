@@ -48,3 +48,8 @@ function buildCombinedStacks(stack, nested) {
 
   return stack;
 }
+
+export function nestError(message, error) {
+  const nested = new NestedError(message, error);
+  throw new Error(nested.stack);
+}

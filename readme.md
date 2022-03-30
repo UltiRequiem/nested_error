@@ -13,7 +13,35 @@ Get a random item from an array.
 ```typescript
 import { NestedError } from "https://deno.land/x/nested_error/mod.ts";
 
-randomItem(["🐴", "🦄", "🌈"]);
+async function sum(a: number, b: number) {
+  if (a === 4 || b === 4) {
+    throw new Error("The number 4 gives bad luck.");
+  }
+
+  return a + b;
+}
+
+sum(1, 4)
+  .then(console.log)
+  .catch((error) => {
+    const newError = new NestedError("Error while summing 1 and 4", error);
+    console.log(newError.stack);
+  });
+```
+
+Will cause
+
+```
+error: Uncaught (in promise) Error: Error: There was an error while summing 1 and 4
+    at nestError (file:///home/ulti/repos/packages/nested-error/mod.js:53:18)
+    at file:///home/ulti/repos/packages/nested-error/example.ts:14:5
+Caused By: Error: The number 4 gives bad luck.
+    at sum (file:///home/ulti/repos/packages/nested-error/example.ts:5:11)
+    at file:///home/ulti/repos/packages/nested-error/example.ts:11:1
+  throw new Error(nested.stack);
+        ^
+    at nestError (file:///home/ulti/repos/packages/nested-error/mod.js:54:9)
+    at file:///home/ulti/repos/packages/nested-error/example.ts:14:5
 ```
 
 ### [Node.js 🐢](https://npmjs.com/package/@ultirequiem/nested-error)
