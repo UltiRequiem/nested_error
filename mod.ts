@@ -13,7 +13,7 @@ export class NestedError extends Error {
     const oldStackDescriptor = Object.getOwnPropertyDescriptor(this, "stack");
     const stackDescriptor = this.buildStackDescriptor(
       oldStackDescriptor!,
-      nested
+      nested,
     );
 
     Object.defineProperty(this, "stack", stackDescriptor);
