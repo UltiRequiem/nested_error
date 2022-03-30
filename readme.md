@@ -13,7 +13,7 @@ Get a random item from an array.
 ```typescript
 import { NestedError } from "https://deno.land/x/nested_error/mod.ts";
 
-async function sum(a: number, b: number) {
+function sum(a: number, b: number) {
   if (a === 4 || b === 4) {
     throw new Error("The number 4 gives bad luck.");
   }
@@ -21,12 +21,12 @@ async function sum(a: number, b: number) {
   return a + b;
 }
 
-sum(1, 4)
-  .then(console.log)
-  .catch((error) => {
-    const newError = new NestedError("Error while summing 1 and 4", error);
-    console.log(newError.stack);
-  });
+try {
+  sum(1, 4);
+} catch (error) {
+  const newError = new NestedError("Error while summing 1 and 4", error);
+  console.log(newError.stack);
+}
 ```
 
 Will cause

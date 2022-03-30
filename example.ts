@@ -1,6 +1,6 @@
-import { nestError } from "./mod.js";
+import { NestedError } from "./mod.js";
 
-async function sum(a: number, b: number) {
+function sum(a: number, b: number) {
   if (a === 4 || b === 4) {
     throw new Error("The number 4 gives bad luck.");
   }
@@ -8,8 +8,9 @@ async function sum(a: number, b: number) {
   return a + b;
 }
 
-sum(1, 4)
-  .then(console.log)
-  .catch((error) => {
-    nestError("There was an error while summing 1 and 4", error);
-  });
+try {
+  sum(1, 4);
+} catch (error) {
+  const newError = new NestedError("Error while summing 1 and 4", error);
+  console.log(newError.stack);
+}
