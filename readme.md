@@ -1,6 +1,5 @@
 # nested_error
 
-[![CI](https://github.com/UltiRequiem/nested_error/actions/workflows/ci.yaml/badge.svg)](https://github.com/UltiRequiem/nested_error/actions/workflows/ci.yaml)
 [![Code Coverage](https://codecov.io/gh/ultirequiem/nested_error/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/nested_error)
 [![Deno Doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/nested_error/mod.ts)
 
