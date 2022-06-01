@@ -1,6 +1,6 @@
 #!/usr/bin/env -S deno run --allow-env --allow-read --allow-write --allow-run
 
-import { buildPackage } from "https://deno.land/x/ultirequiem@0.0.12/node_support.ts";
+import { buildPackage } from "https://deno.land/x/ultirequiem@0.0.15/node_support.ts";
 
 buildPackage({
   repoName: "nested_error",
