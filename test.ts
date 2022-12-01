@@ -2,7 +2,7 @@ import {
   assert,
   assertEquals,
   assertInstanceOf,
-} from "https://deno.land/std@0.161.0/testing/asserts.ts";
+} from "https://deno.land/std@0.166.0/testing/asserts.ts";
 import { NestedError } from "./mod.ts";
 
 Deno.test("Main", async (t) => {
