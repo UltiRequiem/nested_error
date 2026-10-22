@@ -1,6 +1,6 @@
 # nested_error
 
-Error objects with nested Errors in stacktraces.
+Errors that keep their nested causes in the stack trace.
 
 [![npm](https://img.shields.io/npm/v/@ultirequiem/nested-error?logo=npm&color=cb3837)](https://www.npmjs.com/package/@ultirequiem/nested-error)
 [![npm downloads](https://img.shields.io/npm/dm/@ultirequiem/nested-error?color=cb3837)](https://www.npmjs.com/package/@ultirequiem/nested-error)
