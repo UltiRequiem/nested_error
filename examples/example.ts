@@ -1,4 +1,4 @@
-import { NestedError } from "./mod.ts";
+import { NestedError } from "../src/index.js";
 
 function sum(a: number, b: number) {
   if (a === 4 || b === 4) {
