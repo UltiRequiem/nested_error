@@ -15,7 +15,7 @@ npm install @ultirequiem/nested-error
 
 ## Usage
 
-### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/nested-error)
+ESM only: the same import works in Node.js, Bun and browsers.
 
 ```typescript
 import { NestedError } from "@ultirequiem/nested-error";
@@ -50,17 +50,6 @@ Caused By: Error: The number 4 gives bad luck.
     at nestError (file:///home/ulti/repos/packages/nested-error/mod.js:54:9)
     at file:///home/ulti/repos/packages/nested-error/example.ts:14:5
 ```
-
-### Browser
-
-You can use any [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) 🔥
-
-Eg. [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
-▶ [SkyPack](https://cdn.skypack.dev/@ultirequiem/nested-error) _/_
-[script tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) ▶
-[JSDelivr](https://cdn.jsdelivr.net/npm/@ultirequiem/nested-error).
-
-_The API is the same on all these platforms._
 
 ## Support
 
