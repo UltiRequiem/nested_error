@@ -1,16 +1,21 @@
 # nested_error
 
 [![Code Coverage](https://codecov.io/gh/ultirequiem/nested_error/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/nested_error)
-[![Deno Doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/nested_error/mod.ts)
 
 Error objects with nested Errors in stacktraces.
 
+## Install
+
+```sh
+npm install nested-error
+```
+
 ## Usage
 
-### [Deno 🦕](https://deno.land/x/nested_error)
+### [Node.js 🐢🚀](https://npmjs.com/package/nested-error)
 
 ```typescript
-import { NestedError } from "https://deno.land/x/nested_error/mod.ts";
+import { NestedError } from "nested-error";
 
 function sum(a: number, b: number) {
   if (a === 4 || b === 4) {
@@ -43,12 +48,6 @@ Caused By: Error: The number 4 gives bad luck.
     at file:///home/ulti/repos/packages/nested-error/example.ts:14:5
 ```
 
-### [Node.js 🐢](https://npmjs.com/package/@ultirequiem/nested-error)
-
-```javascript
-import { NestedError } from "@ultirequiem/nested-error";
-```
-
 ### Browser
 
 You can use any [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) 🔥
@@ -71,9 +70,6 @@ Open an Issue, I will check it a soon as possible 👀
 
 If you want to hurry me up a bit
 [send me a tweet](https://twitter.com/intent/tweet?text=%40UltiRequiem%20) 😆
-
-Consider [supporting me on Patreon](https://patreon.com/UltiRequiem) if you like
-my work 🚀
 
 Don't forget to start the repo ⭐
 
