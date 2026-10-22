@@ -15,7 +15,7 @@ npm install @ultirequiem/nested-error
 
 ## Usage
 
-ESM only: the same import works in Node.js, Bun and browsers.
+ESM only, types included: the same import works in Node.js, Bun and browsers.
 
 ```typescript
 import { NestedError } from "@ultirequiem/nested-error";
