@@ -1,7 +1,7 @@
 {
   "name": "@ultirequiem/nested-error",
   "version": "0.0.0-development",
-  "description": "",
+  "description": "Errors that keep their nested causes in the stack trace.",
   "type": "module",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -17,7 +17,13 @@
   "engines": {
     "node": ">=20"
   },
-  "keywords": [],
+  "keywords": [
+    "error",
+    "cause",
+    "stack-trace",
+    "esm",
+    "typescript"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",

@@ -1,11 +1,11 @@
 # nested_error
 
+Error objects with nested Errors in stacktraces.
+
 [![npm](https://img.shields.io/npm/v/@ultirequiem/nested-error?logo=npm&color=cb3837)](https://www.npmjs.com/package/@ultirequiem/nested-error)
 [![npm downloads](https://img.shields.io/npm/dm/@ultirequiem/nested-error?color=cb3837)](https://www.npmjs.com/package/@ultirequiem/nested-error)
 [![CI](https://github.com/UltiRequiem/nested_error/actions/workflows/ci.yaml/badge.svg)](https://github.com/UltiRequiem/nested_error/actions/workflows/ci.yaml)
 [![codecov](https://codecov.io/gh/UltiRequiem/nested_error/graph/badge.svg)](https://codecov.io/gh/UltiRequiem/nested_error)
-
-Error objects with nested Errors in stacktraces.
 
 ## Install
 
