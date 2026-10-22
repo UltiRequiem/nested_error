@@ -1,21 +1,24 @@
 # nested_error
 
-[![Code Coverage](https://codecov.io/gh/ultirequiem/nested_error/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/nested_error)
+[![npm](https://img.shields.io/npm/v/@ultirequiem/nested-error?logo=npm&color=cb3837)](https://www.npmjs.com/package/@ultirequiem/nested-error)
+[![npm downloads](https://img.shields.io/npm/dm/@ultirequiem/nested-error?color=cb3837)](https://www.npmjs.com/package/@ultirequiem/nested-error)
+[![CI](https://github.com/UltiRequiem/nested_error/actions/workflows/ci.yaml/badge.svg)](https://github.com/UltiRequiem/nested_error/actions/workflows/ci.yaml)
+[![codecov](https://codecov.io/gh/UltiRequiem/nested_error/graph/badge.svg)](https://codecov.io/gh/UltiRequiem/nested_error)
 
 Error objects with nested Errors in stacktraces.
 
 ## Install
 
 ```sh
-npm install nested-error
+npm install @ultirequiem/nested-error
 ```
 
 ## Usage
 
-### [Node.js 🐢🚀](https://npmjs.com/package/nested-error)
+### [Node.js 🐢🚀](https://npmjs.com/package/@ultirequiem/nested-error)
 
 ```typescript
-import { NestedError } from "nested-error";
+import { NestedError } from "@ultirequiem/nested-error";
 
 function sum(a: number, b: number) {
   if (a === 4 || b === 4) {
@@ -57,7 +60,7 @@ Eg. [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 [script tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) ▶
 [JSDelivr](https://cdn.jsdelivr.net/npm/@ultirequiem/nested-error).
 
-_The API is the same on all this platforms._
+_The API is the same on all these platforms._
 
 ## Documentation
 
@@ -66,12 +69,12 @@ _The API is the same on all this platforms._
 
 ## Support
 
-Open an Issue, I will check it a soon as possible 👀
+Open an Issue, I will check it as soon as possible 👀
 
 If you want to hurry me up a bit
 [send me a tweet](https://twitter.com/intent/tweet?text=%40UltiRequiem%20) 😆
 
-Don't forget to start the repo ⭐
+Don't forget to star the repo ⭐
 
 ## Versioning
 
